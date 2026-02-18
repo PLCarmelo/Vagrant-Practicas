@@ -20,7 +20,8 @@ La infraestructura separa los servicios para garantizar mayor seguridad y escala
 
 El proyecto se organiza de forma modular para facilitar el mantenimiento de la Infraestructura como Código (IaC):
 
-PE02-LAMP/
+```text
+PE02-WORDPRESS/
 ├── Vagrantfile                # Orquestador de las máquinas virtuales
 ├── README.md                  # Documentación del proyecto (este archivo)
 ├── config/
@@ -30,7 +31,7 @@ PE02-LAMP/
     ├── install-db.sh          # Instalación y securización de MySQL
     ├── install-web.sh         # Instalación de Apache, PHP y librerías
     └── configure-wordpress.sh # Despliegue y configuración de WordPress
-
+```
 ## 🛠️ Detalle del Provisioning (Automatización)
 
 El despliegue está totalmente automatizado mediante scripts de Bash que configuran cada componente:
